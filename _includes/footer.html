@@ -1,0 +1,15 @@
+<footer class="site-footer">
+  <nav class="main-nav" id="menu">
+    <ul>
+          <li>
+            <a href="{{ site.baseurl }}/steps/search.html" {% if page.url == "/steps/search.html" %}class = "active"{% endif %}>Search</a>
+            <ul>
+                <li>
+                  <a href="{{ site.baseurl }}/steps/ajax.html" {% if page.url == "/steps/ajax.html" %}class = "active"{% endif %}>Ajax</a>
+                </li>
+            </ul>
+          </li>
+
+    </ul>
+  </nav>
+</footer>
