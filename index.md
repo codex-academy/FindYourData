@@ -4,9 +4,13 @@ layout: default
 
 # Find my data
 
+Once your system have data the system users would like to easily find the data they are after. The easier you make that the better your system will become to use especially if the data in the system increases.
+
+You will use html forms and SQL Database queries to add search functionality. Users that are searching for information might not need exactly what they are looking for so our search functionality should allow for partial matching when searching for data.
+
 ## Search bar
 
-Add a search bar to your products screen so that users can find products. They should type in the product name in a text field. When they press the search button only the products that match their search should be displayed.
+Add a search bar to your products screen so that users can find products. Users should type the product name in a text field and then press the search button the products that match their search should be displayed.
 
 ## Interactive search bar
 
