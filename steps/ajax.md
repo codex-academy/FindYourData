@@ -11,31 +11,11 @@ To make an HTTP GET Ajax call using jQuery:
 
 ```javascript
   jQuery.get('/url/to/call', function(result){
-    // display the results of the call in a DIV
-    document.getElementById('targetDiv').innerHTML = result;
-    //or use jQuery
-    //jQuery('#targetDiv').html(result);
-
+    // Some code that uses result
   });
 ```
 
-Alternatively the call can return a Javascript Object (JSON):
-
-```javascript
-  jQuery.get('/url/to/call', function(result){
-    // display the results of the call in a DIV
-
-    var products = result.products;
-
-    // loop through the products...
-    products.forEach(function(product){
-      //we just display the product to the console.
-      console.log(product.name)  
-    });
-  });
-```
-
-See some more details in the [jQuery.get() documentation](https://api.jquery.com/jquery.get/#jQuery-get-url-data-success-dataType).
+The result could be HTML or a Javascript Object (JSON). See some more details in the [jQuery.get() documentation](https://api.jquery.com/jquery.get/#jQuery-get-url-data-success-dataType).
 
 For sending form data to the server side using AJAX one should use HTTP POST. The example below does an HTTP POST when a form with the id `fun-form` is submitted (usually by clicking a button).
 
@@ -53,7 +33,7 @@ See more details about POST in the [jQuery.post() documentation](https://api.jqu
 
 ## Different styles
 
-Ajax calls can either return HTML that you can render on the client side. They can also return datasets in JSON or XML format which you can use on the client side to render data into the DOM.
+Ajax calls can return HTML that you then render on the client side. They can also return datasets in JSON or XML format which you can use on the client side to render data into the DOM.
 
 Using HTML can be easier, but using datasets is a more flexible approach.
 
