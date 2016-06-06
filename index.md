@@ -6,7 +6,7 @@ layout: default
 
 Once your system has data, the users will want to find particular things. The easier you make it to find things, the better your system will be. This is especially important as the amount data in your system increases.
 
-You will use HTML forms and SQL Database queries to add search functionality. Users that are searching for information might not need exactly what they are looking for so our search functionality should allow for partial matching when searching for data.
+You will use HTML forms and SQL Database queries to add search functionality. Users that are searching for information might not know exactly what they are looking for so our search functionality should allow for partial matching when searching for data.
 
 ## Search bar
 
