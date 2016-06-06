@@ -37,12 +37,10 @@ Alternatively the call can return a Javascript Object (JSON):
 
 See some more details in the [jQuery.get() documentation](https://api.jquery.com/jquery.get/#jQuery-get-url-data-success-dataType).
 
-For sending form data to the server side using AJAX one should use HTTP POST.
-
-The example below will do a HTTP POST when a button is clicked.
+For sending form data to the server side using AJAX one should use HTTP POST. The example below does an HTTP POST when a form with the id `fun-form` is submitted (usually by clicking a button).
 
 ```javascript
-jQuery.click('#submitForm', function(){
+jQuery.submit('#fun-form', function(){
 
   jQuery.post('/url/to/post-to', {field1 : "one", field2 : "two"}, function(result){
     console.log(result)
