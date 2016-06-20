@@ -8,7 +8,7 @@ Once your system has data, the users will want to find particular things. The ea
 
 Users that are searching for information might not know exactly what they are looking for so our search functionality should allow for partial matching when searching for data.
 
-First you'll make a regular search using an HTML form and SQL Database queries, then you'll enhance it using Ajax.
+First you'll make a regular search using an HTML form, the POST method, and SQL Database queries. Then you'll enhance it using Ajax.
 
 ## Search bar
 
