@@ -4,7 +4,7 @@ layout: default
 
 # Ajax using jQuery
 
-You can use jQuery to abstract away the details of [XMLHttpRequest](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest).
+You can use jQuery to abstract away the details of [XMLHttpRequest](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest). Including jQuery in your app comes with a cost as well as a benefit. You can read a little more about this on [the JavaScript page of the Front-end Field Guide](http://fefg.projectcodex.co/javascript.html), and a broader discussion of frameworks and libraries at [Front-end Field Guides](http://fef.projectcodex.co/).
 
 To make an HTTP GET Ajax call using jQuery:
 
