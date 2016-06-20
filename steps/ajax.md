@@ -1,11 +1,10 @@
 ---
 layout: default
 ---
-# Ajax
 
-## Ajax using jQuery
+# Ajax using jQuery
 
-jQuery makes it easier to use Ajax by abstracting away the details of [XMLHttpRequest](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest).
+You can use jQuery to abstract away the details of [XMLHttpRequest](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest).
 
 To make an HTTP GET Ajax call using jQuery:
 
