@@ -1,6 +1,9 @@
 <footer class="site-footer">
   <nav class="main-nav" id="menu">
     <ul>
+      <li>
+        <a href="{{ site.baseurl }}/" {% if page.url == "/" %}class = "active"{% endif %}>Find my data</a>
+      </li>
           <li>
             <a href="{{ site.baseurl }}/steps/search.html" {% if page.url == "/steps/search.html" %}class = "active"{% endif %}>Search</a>
             <ul>
