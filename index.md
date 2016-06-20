@@ -12,7 +12,7 @@ First you'll make a regular search using an HTML form, the POST method, and SQL 
 
 ## Search bar
 
-Add a search bar to your products screen. Users will type the product name in a text field and then press the search button. The products that match their search should be displayed.
+Add a search bar to your products screen. Users will type the product name in a text field (an `input`) and then press the search `button` to submit the `form`. The products that match their search should be displayed on a new search results page.
 
 ## Interactive search bar
 
