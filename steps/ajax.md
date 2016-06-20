@@ -14,7 +14,7 @@ To make an HTTP GET Ajax call using jQuery:
   });
 ```
 
-You can read more abou this in the [jQuery.get() documentation](https://api.jquery.com/jquery.get/#jQuery-get-url-data-success-dataType).
+You can read more about this in the [jQuery.get() documentation](https://api.jquery.com/jquery.get/#jQuery-get-url-data-success-dataType).
 
 For sending form data to the server side using Ajax you should use HTTP POST. The example below does an HTTP POST when a form with the id `fun-form` is submitted (usually by clicking a button).
 
