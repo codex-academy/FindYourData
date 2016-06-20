@@ -21,6 +21,5 @@ Let's add an interactive search bar to your Products screen.
 The search bar should:
 
 * automatically start searching after you have typed 3 characters;
-* only display the products that match the search;
 * display matches for both Product and Category names;
 * display all products if the search bar is empty.
