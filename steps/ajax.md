@@ -1,44 +1,12 @@
 ---
 layout: default
 ---
+# Create a more interactive experience
 
-# Ajax using jQuery
+To create a more interactive web application you can take control of page rendering: rather than refreshing the whole page, you can refresh only certain fragments it.
 
-You can use jQuery to abstract away the details of [XMLHttpRequest](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest). Including jQuery in your app comes with a cost as well as a benefit. You can read a little more about this on [the JavaScript page of the Front-end Field Guide](http://fefg.projectcodex.co/javascript.html), and a broader discussion of frameworks and libraries at [Front-end Field Guides](http://fef.projectcodex.co/).
+To do this you can use Ajax, which is based upon the `XMLHttpRequest` object. Ajax stands for **A**synchronous **Ja**vaScript and **X**ML, but people commonly use it to mean any asynchronous request from a web page. This allows you to send HTTP requests, such as GET and POST, to the backend asynchronously. See more details about the `XMLHttpRequest` in [Chapter 17 of Eloquent JavaScript: HTTP](http://eloquentjavascript.net/17_http.html#h_Gh3HVKEFJQ).
 
-To make an HTTP GET Ajax call using jQuery:
+The result of the request could be XML, JSON, script, text, or HTML. The returned dataset can be used to render data into the DOM. Most of the time the request will return HTML or a JavaScript Object (JSON). Using HTML can be easier, but using datasets is a more flexible approach.
 
-```javascript
-  jQuery.get('/url/to/call', function(result){
-    // Some code that uses result
-  });
-```
-
-You can read more about this in the [jQuery.get() documentation](https://api.jquery.com/jquery.get/#jQuery-get-url-data-success-dataType).
-
-For sending form data to the server side using Ajax you should use HTTP POST. The example below does an HTTP POST when a form with the id `search` is submitted (usually by clicking a button). Note that you need to get the data from the form (here we use jQuery and it's `val()` method)
-
-```javascript
-jQuery.submit('#search', function(event){
-
-  // Stop the form from submitting normally
-  event.preventDefault();
-
-  // Get the search term from the DOM
-  var thesearchterm = jQuery('#searchterm').val();
-
-  // use jQuery to POST the data to the /search URL
-  jQuery.post('/search', {searchterm: thesearchterm}, function(result){
-    console.log(result);
-  });
-
-});
-```
-
-See more details about POST in the [jQuery.post() documentation](https://api.jquery.com/jQuery.post/#jQuery-post-url-data-success-dataType).
-
-## Realities of Ajax
-
-Ajax gives you much more flexibility, but makes your client side JavaScript more complicated: it moves some of the logic from the server side to the client side.
-
-You can use [Handlebars](http://handlebarsjs.com/) templating on the client side.
+Read more about [Ajax using jQuery](/steps/ajax-using-jquery.html) or see some alternatives on [You might not need jQuery](http://youmightnotneedjquery.com/#ajax).
