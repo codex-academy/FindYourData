@@ -16,13 +16,20 @@ To make an HTTP GET Ajax call using jQuery:
 
 You can read more about this in the [jQuery.get() documentation](https://api.jquery.com/jquery.get/#jQuery-get-url-data-success-dataType).
 
-For sending form data to the server side using Ajax you should use HTTP POST. The example below does an HTTP POST when a form with the id `fun-form` is submitted (usually by clicking a button).
+For sending form data to the server side using Ajax you should use HTTP POST. The example below does an HTTP POST when a form with the id `search` is submitted (usually by clicking a button). Note that you need to get the data from the form (here we use jQuery and it's `val()` method)
 
 ```javascript
-jQuery.submit('#fun-form', function(){
+jQuery.submit('#search', function(event){
 
-  jQuery.post('/url/to/post-to', {field1 : "one", field2 : "two"}, function(result){
-    console.log(result)
+  // Stop the form from submitting normally
+  event.preventDefault();
+
+  // Get the search term from the DOM
+  var thesearchterm = jQuery('#searchterm').val();
+
+  // use jQuery to POST the data to the /search URL
+  jQuery.post('/search', {searchterm: thesearchterm}, function(result){
+    console.log(result);
   });
 
 });
