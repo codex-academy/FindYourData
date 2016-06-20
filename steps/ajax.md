@@ -14,9 +14,9 @@ To make an HTTP GET Ajax call using jQuery:
   });
 ```
 
-The result could be HTML or a JavaScript Object (JSON). See some more details in the [jQuery.get() documentation](https://api.jquery.com/jquery.get/#jQuery-get-url-data-success-dataType).
+You can read more abou this in the [jQuery.get() documentation](https://api.jquery.com/jquery.get/#jQuery-get-url-data-success-dataType).
 
-For sending form data to the server side using Ajax one should use HTTP POST. The example below does an HTTP POST when a form with the id `fun-form` is submitted (usually by clicking a button).
+For sending form data to the server side using Ajax you should use HTTP POST. The example below does an HTTP POST when a form with the id `fun-form` is submitted (usually by clicking a button).
 
 ```javascript
 jQuery.submit('#fun-form', function(){
@@ -29,12 +29,6 @@ jQuery.submit('#fun-form', function(){
 ```
 
 See more details about POST in the [jQuery.post() documentation](https://api.jquery.com/jQuery.post/#jQuery-post-url-data-success-dataType).
-
-## Different styles
-
-Ajax calls can return HTML that you then render on the client side. They can also return datasets in JSON or XML format which you can use on the client side to render data into the DOM.
-
-Using HTML can be easier, but using datasets is a more flexible approach.
 
 ## Realities of Ajax
 
