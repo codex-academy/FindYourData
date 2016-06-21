@@ -19,16 +19,16 @@ You can read more about this in the [jQuery.get() documentation](https://api.jqu
 For sending form data to the server side using Ajax you should use HTTP POST. The example below does an HTTP POST when a form with the id `search` is submitted (usually by clicking a button). Note that you need to get the data from the form (here we use jQuery and it's `val()` method)
 
 ```javascript
-jQuery('#searchForm').submit( function(event){
+jQuery('#search-form').submit( function(event){
 
   // Stop the form from submitting normally
   event.preventDefault();
 
   // Get the search term from the DOM
-  var thesearchterm = jQuery('#searchterm').val();
+  var theSearchTerm = jQuery('#search-term').val();
 
   // use jQuery to POST the data to the /search URL
-  jQuery.post('/search', {searchterm: thesearchterm}, function(result){
+  jQuery.post('/search', {searchterm: theSearchTerm}, function(result){
     console.log(result);
   });
 
@@ -42,3 +42,10 @@ See more details about POST in the [jQuery.post() documentation](https://api.jqu
 Ajax gives you much more flexibility, but makes your client side JavaScript more complicated: it moves some of the logic from the server side to the client side.
 
 You can use [Handlebars](http://handlebarsjs.com/) templating on the client side.
+
+## jQuery and the DOM
+
+jQuery has it's own way of [accessing the DOM](https://api.jquery.com/category/selectors/) and [manipulating the DOM](https://api.jquery.com/category/manipulation/).
+
+For  [Cape Town Green](http://taxi.projectcodex.co/)
+and [Playing With Matches](http://matches.projectcodex.co/) we used `document.querySelector('.taxi')` to find the element with the class of `taxi` in the DOM. With jQuery, we would write `jQuery('.taxi')` to achieve the same thing.
