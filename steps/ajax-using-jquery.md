@@ -48,4 +48,4 @@ You can use [Handlebars](http://handlebarsjs.com/) templating on the client side
 jQuery has it's own way of [accessing the DOM](https://api.jquery.com/category/selectors/) and [manipulating the DOM](https://api.jquery.com/category/manipulation/).
 
 For  [Cape Town Green](http://taxi.projectcodex.co/)
-and [Playing With Matches](http://matches.projectcodex.co/) we used `document.querySelector('.taxi')` to find the element with the class of `taxi`. With jQuery, we would write `jQuery('.taxi')` to achieve the same thing.
+and [Playing With Matches](http://matches.projectcodex.co/) we used `document.querySelector('.taxi')` to find the element with the class of `taxi` in the DOM. With jQuery, we would write `jQuery('.taxi')` to achieve the same thing.
