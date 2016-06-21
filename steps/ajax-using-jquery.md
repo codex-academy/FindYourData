@@ -19,7 +19,7 @@ You can read more about this in the [jQuery.get() documentation](https://api.jqu
 For sending form data to the server side using Ajax you should use HTTP POST. The example below does an HTTP POST when a form with the id `search` is submitted (usually by clicking a button). Note that you need to get the data from the form (here we use jQuery and it's `val()` method)
 
 ```javascript
-jQuery.submit('#search', function(event){
+jQuery('#searchForm').submit( function(event){
 
   // Stop the form from submitting normally
   event.preventDefault();
