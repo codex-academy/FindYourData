@@ -1,44 +1,12 @@
 ---
 layout: default
 ---
-# AJAX
+# Create a more interactive experience
 
-## AJAX using jQuery
+To create a more interactive web application you can take control of page rendering: rather than refreshing the whole page, you can refresh only certain fragments using the DOM and Ajax.
 
-jQuery makes it easier to use Ajax by abstracting away the details of [XMLHttpRequest](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest).
+To do this you can use Ajax, which is based upon the `XMLHttpRequest` object. Ajax stands for **A**synchronous **Ja**vaScript and **X**ML, but people commonly use it to mean any asynchronous request from a web page. This allows you to send HTTP requests, such as GET and POST, to the backend asynchronously. See more details about the `XMLHttpRequest` in [Chapter 17 of Eloquent JavaScript: HTTP](http://eloquentjavascript.net/17_http.html#h_Gh3HVKEFJQ).
 
-To make an HTTP GET Ajax call using jQuery:
+The result of the request could be XML, JSON, script, text, or HTML. The returned dataset can be used to render data into the DOM. Most of the time the request will return HTML or a JavaScript Object (JSON). Using HTML can be easier, but using datasets is a more flexible approach.
 
-```javascript
-  jQuery.get('/url/to/call', function(result){
-    // Some code that uses result
-  });
-```
-
-The result could be HTML or a Javascript Object (JSON). See some more details in the [jQuery.get() documentation](https://api.jquery.com/jquery.get/#jQuery-get-url-data-success-dataType).
-
-For sending form data to the server side using AJAX one should use HTTP POST. The example below does an HTTP POST when a form with the id `fun-form` is submitted (usually by clicking a button).
-
-```javascript
-jQuery.submit('#fun-form', function(){
-
-  jQuery.post('/url/to/post-to', {field1 : "one", field2 : "two"}, function(result){
-    console.log(result)
-  });
-
-});
-```
-
-See more details about POST in the [jQuery.post() documentation](https://api.jquery.com/jQuery.post/#jQuery-post-url-data-success-dataType).
-
-## Different styles
-
-Ajax calls can return HTML that you then render on the client side. They can also return datasets in JSON or XML format which you can use on the client side to render data into the DOM.
-
-Using HTML can be easier, but using datasets is a more flexible approach.
-
-## Realities of AJAX
-
-AJAX gives you much more flexibility, but makes your client side JavaScript more complicated: it moves some of the logic from the server side to the client side.
-
-You can use [handlebars](http://handlebarsjs.com/) templating on the client side.
+Read more about [Ajax using jQuery](/steps/ajax-using-jquery.html) or see some alternatives on [You might not need jQuery](http://youmightnotneedjquery.com/#ajax).

@@ -1,11 +1,14 @@
 <footer class="site-footer">
   <nav class="main-nav" id="menu">
     <ul>
+      <li>
+        <a href="{{ site.baseurl }}/" {% if page.url == "/" %}class = "active"{% endif %}>Find my data</a>
+      </li>
           <li>
-            <a href="{{ site.baseurl }}/steps/search.html" {% if page.url == "/steps/search.html" %}class = "active"{% endif %}>Search</a>
+            <a href="{{ site.baseurl }}/steps/ajax.html" {% if page.url == "/steps/ajax.html" %}class = "active"{% endif %}>Ajax</a>
             <ul>
                 <li>
-                  <a href="{{ site.baseurl }}/steps/ajax.html" {% if page.url == "/steps/ajax.html" %}class = "active"{% endif %}>Ajax</a>
+                  <a href="{{ site.baseurl }}/steps/ajax-using-jquery.html" {% if page.url == "/steps/ajax-using-jquery.html" %}class = "active"{% endif %}>Ajax with jQuery</a>
                 </li>
             </ul>
           </li>
