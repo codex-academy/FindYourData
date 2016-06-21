@@ -42,3 +42,10 @@ See more details about POST in the [jQuery.post() documentation](https://api.jqu
 Ajax gives you much more flexibility, but makes your client side JavaScript more complicated: it moves some of the logic from the server side to the client side.
 
 You can use [Handlebars](http://handlebarsjs.com/) templating on the client side.
+
+## jQuery and the DOM
+
+jQuery has it's own way of [accessing the DOM](https://api.jquery.com/category/selectors/) and [manipulating the DOM](https://api.jquery.com/category/manipulation/).
+
+For  [Cape Town Green](http://taxi.projectcodex.co/)
+and [Playing With Matches](http://matches.projectcodex.co/) we used `document.querySelector('.taxi')` to find the element with the class of `taxi`. With jQuery, we would write `jQuery('.taxi')` to achieve the same thing.
